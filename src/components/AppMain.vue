@@ -1,8 +1,6 @@
 <script></script>
 
-<template>
-	<h1>MAIN</h1>
-</template>
+<template></template>
 
 <style lang="scss" scoped>
 @import "../styles/generals.scss";
