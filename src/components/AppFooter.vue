@@ -102,6 +102,11 @@ h3 {
 	border: 1px solid;
 	font-family: "Inter", sans-serif;
 	font-weight: 600;
+	transition: all 0.25s;
+	&:hover {
+		background-color: $color-light-1;
+		color: $color-primary;
+	}
 }
 
 .copyStyle {

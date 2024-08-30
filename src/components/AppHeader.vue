@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-	<div class="container-fluid">
+	<div class="container-fluid position-absolute">
 		<div class="d-flex justify-content-between align-content-center p-3">
 			<div class="logoContainer">
 				<img

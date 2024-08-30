@@ -27,7 +27,7 @@ li {
 	a {
 		color: $color-primary;
 		text-decoration: none;
-		font-size: 0.6rem;
+		font-size: 0.75rem;
 		font-weight: 300;
 
 		&:hover {

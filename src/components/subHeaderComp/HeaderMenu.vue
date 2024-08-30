@@ -26,11 +26,11 @@ li {
 	a {
 		color: $color-primary;
 		text-decoration: none;
-		font-size: 0.6rem;
+		font-size: 0.75rem;
 		font-weight: 500;
 
 		&:hover {
-			border-bottom: 2px solid $color-light-3;
+			border-bottom: 2px solid $color-white;
 			padding-bottom: 5px;
 		}
 	}
