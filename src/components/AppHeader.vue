@@ -1,11 +1,11 @@
 <script>
-import menuItems from "../arrays";
+import { arrays } from "../arrays";
 import HeaderMenuVue from "./subHeaderComp/HeaderMenu.vue";
 
 export default {
 	data() {
 		return {
-			menuItems,
+			arrays,
 		};
 	},
 	components: {
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-	<div class="container-fluid position-absolute">
+	<div class="container-fluid">
 		<div class="d-flex justify-content-between align-content-center p-3">
 			<div class="logoContainer">
 				<img
@@ -25,7 +25,7 @@ export default {
 			</div>
 			<ul class="menu list-unstyled m-0">
 				<HeaderMenuVue
-					v-for="item in menuItems"
+					v-for="item in arrays.headerMenu"
 					:key="item.name"
 					:item="item" />
 			</ul>
@@ -37,7 +37,8 @@ export default {
 @import "../styles/generals.scss";
 
 .logoHeader {
-	width: 35%;
+	width: 50%;
+	min-width: 100px;
 }
 .menu {
 	display: flex;
