@@ -91,7 +91,7 @@ export const arrays = reactive({
           icon: "fas fa-cart-shopping",
         }
       ],
-      // Social Media Icons
+    // Social Media Icons
     socialIcons: [
     {
       name: "Instagram",
@@ -113,6 +113,58 @@ export const arrays = reactive({
       icon: "fab fa-pinterest-p",
       link: "https://www.pinterest.com"
     }
+  ],
+  // Cookies
+  cookies: [
+    {
+      name: "choco chip cookies",
+      price:['$19:00', '$39:00'],
+      link: "choco-chip-cookies.jpg",
+      categories: ["cookies", "pastries"], 
+    },
+    {
+      name: "strawberry jam cookies",
+      price:['$24:00', '$62:00'],
+      link: "strawberry-jam-cookies.jpg",
+      categories: ["cookies", "pastries"], 
+    },
+    {
+      name: "strawberry donut",
+      price:['$24:00', '$42:00'],
+      link: "strawberry-donut.jpg",
+      categories: ["donuts", "pastries"], 
+    },
+    {
+      name: "perfect macarons",
+      price:['$18:00', '$52:00'],
+      link: "perfect-macarons.jpg",
+      categories: ["macarons", "pastries"], 
+    },
+    {
+      name: "cookies with ice cream",
+      price:['$16:00', '$18:00'],
+      link: "cookies-with-ice-cream.jpg",
+      categories: ["cookies", "desserts"], 
+    },
+    {
+      name: "blackberry stuffed bread",
+      price:['$14:00', '$36:00'],
+      link: "blackberry-stuffed-bread.jpg",
+      categories: ["bread", "pastries"], 
+    },
+    {
+      name: "glazed pancake with lemon",
+      price:['$7:00', '$26:00'],
+      link: "glazed-pancake-with-lemon.jpg",
+      categories: ["pancakes", "breakfast"], 
+    },
+    {
+      name: "home bread",
+      price:['$9:00', '$30:00'],
+      link: "home-bread.jpg",
+      categories: ["bread", "pastries"], 
+    },
+    
   ]
 })
   
