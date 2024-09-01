@@ -3,6 +3,7 @@ import BoxLayoutSection from "./subMainComp/BoxLayoutSection.vue";
 import CorporateWedding from "./subMainComp/CorporateWedding.vue";
 import Jumbo from "./subMainComp/Jumbo.vue";
 import OurProducts from "./subMainComp/OurProducts.vue";
+import Location from "./subMainComp/Location.vue";
 
 export default {
 	components: {
@@ -10,6 +11,7 @@ export default {
 		OurProducts,
 		CorporateWedding,
 		BoxLayoutSection,
+		Location,
 	},
 };
 </script>
@@ -19,6 +21,7 @@ export default {
 	<OurProducts />
 	<CorporateWedding />
 	<BoxLayoutSection />
+	<Location />
 </template>
 
 <style lang="scss" scoped>
