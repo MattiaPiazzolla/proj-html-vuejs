@@ -5,6 +5,7 @@ import Jumbo from "./subMainComp/Jumbo.vue";
 import OurProducts from "./subMainComp/OurProducts.vue";
 import Location from "./subMainComp/Location.vue";
 import MadeForSharing from "./subMainComp/MadeForSharing.vue";
+import Banner from "./subMainComp/Banner.vue";
 
 export default {
 	components: {
@@ -14,6 +15,7 @@ export default {
 		BoxLayoutSection,
 		Location,
 		MadeForSharing,
+		Banner,
 	},
 };
 </script>
@@ -25,6 +27,7 @@ export default {
 	<BoxLayoutSection />
 	<Location />
 	<MadeForSharing />
+	<Banner />
 </template>
 
 <style lang="scss" scoped>

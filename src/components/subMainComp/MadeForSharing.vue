@@ -53,7 +53,6 @@ export default {};
 
 .row {
 	padding: 10vh 5%;
-	aspect-ratio: 2/1;
 }
 
 .sectionTitle {
