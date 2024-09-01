@@ -9,3 +9,6 @@ SCOMPOSIZIONE PROBLEMA
 3-Progettare e definire lo stile del footer
 4-Dividere il main i componenti
 5-Definire lo stile della componente jumbotron
+6-Definire lo stile della componente ourProduct
+6.1-creare una sottocomponente per inserire un carosello dinamico in ourProduct
+7-

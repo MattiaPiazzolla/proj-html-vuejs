@@ -5,7 +5,7 @@ export default {};
 <template>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-sm-9 col-md-8 col-lg-6 col-xl-4">
 				<p class="text-uppercase sectionTitle">
 					fresh &amp; tasty bakery every day
 				</p>
@@ -28,7 +28,7 @@ export default {};
 	background-image: url("../../../public/images/hero-header-bakery.jpg");
 	background-size: cover;
 	background-repeat: repeat;
-	height: 75vh;
+	padding: 100px 0;
 
 	.sectionTitle {
 		color: rgb(125, 125, 125);

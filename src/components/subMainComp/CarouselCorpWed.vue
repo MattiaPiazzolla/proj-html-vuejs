@@ -13,7 +13,7 @@ export default defineComponent({
 	data() {
 		return {
 			settings: {
-				itemsToShow: 2,
+				itemsToShow: 1,
 				snapAlign: "center",
 			},
 			breakpoints: {
@@ -22,7 +22,7 @@ export default defineComponent({
 					snapAlign: "center",
 				},
 				1024: {
-					itemsToShow: 2,
+					itemsToShow: 4,
 					snapAlign: "start",
 				},
 			},
@@ -45,16 +45,20 @@ export default defineComponent({
 <template>
 	<Carousel ref="carousel" v-bind="settings" :breakpoints="breakpoints">
 		<Slide v-for="cookie in getCookies().cookies" :key="cookie.name">
-			<div class="position-relative">
-				<div class="hover-slide">
-					<div class="overlay">
-						<h3>{{ cookie.name }}</h3>
-						<p>{{ cookie.categories.join(", ") }}</p>
-						<h4>{{ cookie.price.join(" ") }}</h4>
+			<div>
+				<div class="position-relative">
+					<div class="hover-slide">
+						<div class="overlay">
+							<p>SELECT OPTIONS / QUICK VIEW</p>
+						</div>
+					</div>
+					<div class="cookie-slide">
+						<img :src="`/products-img/${cookie.link}`" :alt="cookie.name" />
 					</div>
 				</div>
-				<div class="cookie-slide">
-					<img :src="`/products-img/${cookie.link}`" :alt="cookie.name" />
+				<div class="lable">
+					<h3 class="d-block">{{ cookie.name }}</h3>
+					<p>{{ cookie.price.join(" - ") }}</p>
 				</div>
 			</div>
 		</Slide>
@@ -106,14 +110,9 @@ export default defineComponent({
 		&:hover {
 			opacity: 1;
 		}
-		h3 {
-			font-family: "DM Serif Text", serif;
-			text-transform: capitalize;
-			font-weight: 900;
-		}
-		h4 {
-			font-size: 1.5rem;
-			font-weight: 400;
+		p {
+			font-size: 0.9rem;
+			color: $color-light-1;
 		}
 	}
 }
@@ -123,8 +122,8 @@ export default defineComponent({
 	color: $color-white;
 	opacity: 0.55;
 	border: none;
-	padding: 30px 15px;
-	font-size: 1.5rem;
+	padding: 35px 17.5px;
+	font-size: 0.75rem;
 	font-weight: 100;
 	position: absolute;
 	transition: all 0.25s;
@@ -134,15 +133,31 @@ export default defineComponent({
 	}
 }
 
+.lable {
+	margin-top: 15px;
+	color: $color-primary;
+	min-height: 100px;
+
+	h3 {
+		font-family: "DM Serif Text", serif;
+		text-transform: capitalize;
+		font-weight: 600;
+		font-size: 1.5rem;
+	}
+	p {
+		font-weight: 200;
+	}
+}
+
 .prev {
 	left: 10px;
 	transform: translateY(-50%);
-	top: 50%;
+	top: 46%;
 }
 
 .next {
 	right: 10px;
 	transform: translateY(-50%);
-	top: 50%;
+	top: 46%;
 }
 </style>

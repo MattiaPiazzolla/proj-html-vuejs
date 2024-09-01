@@ -23,7 +23,7 @@ export default {
 				</h3>
 				<button class="buttonHeader">Start Shopping</button>
 			</div>
-			<div class="col-7">
+			<div class="col-8">
 				<!-- <Carousel1 /> -->
 				<Carousel2 />
 				<!-- <Carousel3 /> -->
@@ -37,6 +37,7 @@ export default {
 
 .container-fluid {
 	padding: 25px 0;
+	margin-bottom: 100px;
 
 	.sectionTitle {
 		color: rgb(125, 125, 125);
