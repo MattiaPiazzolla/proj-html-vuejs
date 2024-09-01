@@ -159,8 +159,8 @@ h2 {
 
 .blockTwo,
 .blockTwoRight {
-	flex: 1; /* Occupa lo stesso spazio, mantenendo l'allineamento sulla stessa linea */
-	min-width: 0; /* Previene l'overflow */
+	flex: 1;
+	min-width: 0;
 }
 
 .blockTwo {
