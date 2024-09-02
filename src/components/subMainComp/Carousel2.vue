@@ -13,7 +13,7 @@ export default defineComponent({
 	data() {
 		return {
 			settings: {
-				itemsToShow: 2,
+				itemsToShow: 1,
 				snapAlign: "center",
 			},
 			breakpoints: {

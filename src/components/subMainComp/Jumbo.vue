@@ -47,6 +47,9 @@ export default {};
 		margin-top: 25px;
 		font-size: 1.2rem;
 		color: rgb(125, 125, 125);
+		@media (max-width: 767px) {
+			color: black;
+		}
 	}
 
 	.buttonHeader {

@@ -15,7 +15,7 @@ export default {
 <template>
 	<div class="container-fluid">
 		<div class="row justify-content-between">
-			<div class="col-4">
+			<div class="col-12 col-lg-4">
 				<p class="text-uppercase sectionTitle">Our products</p>
 				<h3>
 					All our delectable pastries are backed fresh in our Kitchen very
@@ -23,7 +23,7 @@ export default {
 				</h3>
 				<button class="buttonHeader">Start Shopping</button>
 			</div>
-			<div class="col-8">
+			<div class="col-12 col-lg-8 mt-5 mt-lg-0">
 				<!-- <Carousel1 /> -->
 				<Carousel2 />
 				<!-- <Carousel3 /> -->
