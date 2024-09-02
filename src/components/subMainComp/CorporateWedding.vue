@@ -12,25 +12,25 @@ export default {
 	<div class="container-fluid">
 		<p class="sectionTitle text-uppercase">Corporate &amp; Weddings</p>
 		<h3 class="text-capitalize">Baking special moments</h3>
-		<div class="row">
-			<div class="col-6 corpSide pe-5 ps-0">
+		<div class="row gy-5 gy-md-0">
+			<div class="col-12 col-md-6 corpSide pe-0 pe-md-5 ps-0">
 				<img src="../../../public/images/corporate-bg.jpg" alt="" />
 				<img
 					src="../../../public/images/corporate-hover-bg.jpg"
 					alt=""
-					class="hoverImgCorp pe-5" />
+					class="hoverImgCorp pe-0 pe-md-5" />
 				<div class="textHoverCont">
 					<p>International Bakery</p>
 					<h3 class="mb-0 text-capitalize">Corporate Events</h3>
 					<button class="button">Explore more</button>
 				</div>
 			</div>
-			<div class="col-6 wedSide ps-5 pe-0 overflow-hidden">
+			<div class="col-12 col-md-6 wedSide ps-0 ps-md-5 pe-0 overflow-hidden">
 				<img src="../../../public/images/wedding-bg.jpg" alt="" />
 				<img
 					src="../../../public/images/wedding-hover-bg.jpg"
 					alt=""
-					class="hoverImgWed ps-5" />
+					class="hoverImgWed ps-0 ps-md-5" />
 				<div class="textHoverCont">
 					<p>Private dining hall</p>
 					<h3 class="mb-0 text-capitalize">Weddings &amp; Parties</h3>
@@ -39,7 +39,7 @@ export default {
 			</div>
 		</div>
 		<div class="row sectionTwo">
-			<div class="col-3 text-center">
+			<div class="col-12 col-lg-3 text-center">
 				<h3>Find a freshly baked product perfect for you</h3>
 				<p class="">
 					Integer a nibh vitae ex porttitor rutrum et ut velit. Etiam ac felis
@@ -47,7 +47,7 @@ export default {
 				</p>
 				<button class="button">Shop All Products</button>
 			</div>
-			<div class="col-9">
+			<div class="col-12 col-lg-9 mt-5 mt-lg-0">
 				<CarouselCorpWed />
 			</div>
 		</div>
