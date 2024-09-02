@@ -7,7 +7,7 @@ export default {};
 		<div class="row rowBase">
 			<p class="text-uppercase sectionTitle text-center">locations</p>
 			<h3 class="text-center title">Visit our Bakeries</h3>
-			<div class="col-6 p-0 left">
+			<div class="col-12 col-md-6 p-0 left">
 				<img src="../../../public/images/new-york-bk-1200x794.jpg" alt="" />
 				<h3 class="text-center my-5">New York</h3>
 				<div class="row">
@@ -26,7 +26,7 @@ export default {};
 					</div>
 				</div>
 			</div>
-			<div class="col-6 p-0 right">
+			<div class="col-12 col-md-6 p-0 mt-5 mt-md-0 right">
 				<img src="../../../public/images/london-bk-1200x794.jpg" alt="" />
 				<h3 class="text-center my-5">London</h3>
 				<div class="row">
@@ -60,7 +60,10 @@ export default {};
 	font-size: 0.75rem;
 }
 .title {
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
+	@media (min-width: 768px) {
+		margin-bottom: 5rem;
+	}
 }
 h3 {
 	color: $color-primary;
@@ -83,9 +86,21 @@ img {
 
 	.titleInfo {
 		font-size: 0.8rem;
+		@media (min-width: 768px) {
+			font-size: 0.6rem;
+		}
+		@media (min-width: 992px) {
+			font-size: 0.8rem;
+		}
 	}
 	.info {
 		font-size: 1.05rem;
+		@media (min-width: 768px) {
+			font-size: 0.8rem;
+		}
+		@media (min-width: 992px) {
+			font-size: 1.05rem;
+		}
 	}
 }
 .button {
@@ -101,6 +116,21 @@ img {
 	&:hover {
 		color: $color-light-1;
 		background-color: $color-primary;
+	}
+	@media (min-width: 768px) {
+		padding: 15px 10px;
+	}
+	@media (min-width: 992px) {
+		padding: 15px 20px;
+	}
+	@media (min-width: 992px) {
+		padding: 15px 25px;
+	}
+	@media (min-width: 1200px) {
+		padding: 15px 30px;
+	}
+	@media (min-width: 1400px) {
+		padding: 15px 40px;
 	}
 }
 </style>

@@ -138,9 +138,9 @@ export default {};
 		color: $color-white;
 		font-size: 1.1rem;
 	}
-	padding-right: 30%;
+	padding-right: 0;
 	@media (min-width: 992px) {
-		padding-right: 10%;
+		padding-right: 30%;
 	}
 }
 
