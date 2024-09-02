@@ -28,6 +28,7 @@ export default {};
 	background-image: url("../../../public/images/hero-header-bakery.jpg");
 	background-size: cover;
 	background-repeat: repeat;
+	background-position: top;
 	padding: 100px 0;
 
 	.sectionTitle {

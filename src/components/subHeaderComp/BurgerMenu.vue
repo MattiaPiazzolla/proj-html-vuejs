@@ -21,23 +21,23 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/generals.scss";
 li {
-	margin: 0 15px;
-
+	margin: 15px 0;
+	text-align: center;
 	a {
-		color: $color-primary;
+		color: $color-white;
 		text-decoration: none;
-		font-size: 0.75rem;
+		font-size: 1.1rem;
 		font-weight: 500;
 		white-space: nowrap;
 
 		&:hover {
-			border-bottom: 2px solid $color-white;
+			border-bottom: 2px solid $color-light-2;
 			padding-bottom: 5px;
 		}
 	}
 
 	.selected {
-		border-bottom: 2px solid $color-primary !important;
+		border-bottom: 2px solid $color-white !important;
 		padding-bottom: 5px;
 	}
 }
