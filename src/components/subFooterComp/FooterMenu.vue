@@ -22,17 +22,23 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/generals.scss";
 li {
-	margin-right: 15px;
+	margin-right: 2.5px;
+	@media (min-width: 768px) {
+		margin-right: 15px;
+	}
 
 	a {
 		color: $color-primary;
 		text-decoration: none;
-		font-size: 0.75rem;
+		font-size: 0.5rem;
 		font-weight: 300;
 
 		&:hover {
 			border-bottom: 2px solid $color-light-3;
 			padding-bottom: 5px;
+		}
+		@media (min-width: 768px) {
+			font-size: 0.75rem;
 		}
 	}
 	.countChar {

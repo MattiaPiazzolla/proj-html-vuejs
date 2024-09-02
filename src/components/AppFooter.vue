@@ -19,7 +19,7 @@ export default {
 <template>
 	<div class="container-fluid p-5">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-12 col-lg-6">
 				<img
 					src="../../public/images/avada-bakery-logo-retina.png"
 					alt="logo"
@@ -31,8 +31,8 @@ export default {
 						:item="item" />
 				</ul>
 			</div>
-			<div class="col-6 d-flex flex-column">
-				<h3 class="text-end">Subscribe to our newsletter</h3>
+			<div class="col-12 col-lg-6 d-flex flex-column mt-5 mt-lg-0">
+				<h3 class="text-start text-lg-end">Subscribe to our newsletter</h3>
 				<div class="subscribeContainer">
 					<input
 						type="email"
@@ -44,7 +44,7 @@ export default {
 		</div>
 		<div class="row bottomSection">
 			<div class="col-12 d-flex justify-content-between">
-				<p class="copyStyle">
+				<p class="copyStyle w-50 w-lg-auto">
 					©Copyright 2012-2020 | Avada Theme by ThemeFusion | All Right Reserved
 					| Powered by WordPress
 				</p>
@@ -81,7 +81,10 @@ h3 {
 
 .subscribeContainer {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
+	@media (min-width: 768px) {
+		justify-content: flex-end;
+	}
 }
 
 .subscribeInput {

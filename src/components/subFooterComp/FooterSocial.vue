@@ -17,13 +17,16 @@ export default {
 a {
 	color: $color-primary !important;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 300;
-	margin-left: 35px;
+	margin-left: 15px;
 	display: inline-block;
 
 	&:hover i {
 		transform: scale(1.2);
+	}
+	@media (min-width: 992px) {
+		margin-left: 35px;
 	}
 }
 
