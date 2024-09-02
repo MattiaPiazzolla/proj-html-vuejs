@@ -40,8 +40,12 @@ h2 {
 }
 
 .textContainer {
-	padding-left: 200px;
-	width: 50%;
+	padding-left: 0;
+	width: 100%;
+	@media (min-width: 992px) {
+		padding-left: 200px;
+		width: 50%;
+	}
 }
 
 .button {
